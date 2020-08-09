@@ -22,9 +22,11 @@ A) Admin
   4. View blog
   5. Logout admin
   6. Login admin
+  dll
 B) Selain admin
   1. Lihat blog semuanya
   2. Lihat berita berdasarkan judul
+  dll
 ```
 
 # Cara upload di hosting/localhost
@@ -50,6 +52,8 @@ B) Selain admin
 
 Username = icwr
 Password = icwr
+
+Note= jangan lupa diganti username dan passwordnya ya :)
 
 ```
 
