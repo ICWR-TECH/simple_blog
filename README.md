@@ -11,6 +11,7 @@ Blog sederhana | ICWR
 4. CSS
 5. Jquery
 6. JavaScript
+7. HTML
 ```
 
 # Fitur
