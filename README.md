@@ -22,6 +22,8 @@ A) Admin
   4. View blog
   5. Logout admin
   6. Login admin
+  7. Tambah user
+  8. Delete user
   dll
 B) Selain admin
   1. Lihat blog semuanya
