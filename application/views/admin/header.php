@@ -25,6 +25,9 @@
               <a class="nav-link" href="<?php echo base_url("admin/tambah") ?>">Tambah blog</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="<?php echo base_url("admin/user"); ?>">View user</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?php echo base_url("admin/keluar"); ?>">Keluar</a>
             </li>
           </ul>

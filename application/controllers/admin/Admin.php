@@ -177,6 +177,32 @@ class Admin extends CI_Controller
     $this->load->view("admin/footer");
   }
 
+  function user(){
+    $username=$this->input->post("username");
+    $password=md5($this->input->post("password"));
+    $datane=[
+      "username"=>$username,
+      "password"=>$password
+    ];
+    if($this->input->post("submit")){
+      if ($this->Admin_model->tambah_user($datane)) {
+        $this->session->set_flashdata("sukses_tambah_user");
+        redirect(base_url("admin/user"));
+      }
+    }
+    $data['user']=$this->Admin_model->view_user();
+    $this->load->view("admin/header");
+    $this->load->view("admin/view_admin",$data);
+    $this->load->view("admin/footer");
+  }
+
+  function delete_user($id){
+    if ($this->Admin_model->delete_user($id)) {
+      $this->session->set_flashdata("sukses_hapus_user","Sukses hapus user");
+      redirect(base_url("admin/user"));
+    }
+  }
+
   function logout(){
     $this->session->sess_destroy();
     $this->session->set_flashdata("sukses_logout","Berhasil logout");

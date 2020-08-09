@@ -38,4 +38,16 @@ class Admin_model extends CI_Model
   function tambah($data){
     return $this->db->insert("blog",$data);
   }
+
+  function view_user(){
+    return $this->db->get("admin")->result();
+  }
+
+  function delete_user($id){
+    return $this->db->delete("admin",['id'=>$id]);
+  }
+
+  function tambah_user($data){
+    return $this->db->insert("admin",$data);
+  }
 }
